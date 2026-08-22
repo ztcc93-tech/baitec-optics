@@ -23,28 +23,23 @@ const productCategories = [
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
 
   return (
     <header className="site-header">
       <a className="brand" href="/#top" aria-label="Baitec Optics home">
         <img className="brand-logo" src="/baitec-logo.png" alt="Baitec Optics" />
       </a>
-      <button
-        className="mobile-menu-button"
-        type="button"
-        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
-        aria-expanded={menuOpen}
-        aria-controls="main-navigation"
-        onClick={() => setMenuOpen((open) => !open)}
-      >
-        <span />
-        <span />
-        <span />
+      <button className="mobile-menu-button" type="button" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen((open) => !open)}>
+        <span /><span /><span />
       </button>
       <nav id="main-navigation" className={menuOpen ? "is-open" : ""} aria-label="Main navigation">
         {navigation.slice(0, 2).map(([label, href]) => <a href={href} key={label} onClick={() => setMenuOpen(false)}>{label}</a>)}
-        <div className="nav-products">
-          <a className="nav-products-trigger" href="/products">Products <span aria-hidden="true">⌄</span></a>
+        <div className={`nav-products${productsOpen ? " is-open" : ""}`}>
+          <div className="nav-products-heading">
+            <a className="nav-products-trigger" href="/products" onClick={() => setMenuOpen(false)}>Products</a>
+            <button type="button" className="nav-products-toggle" aria-label="Toggle product categories" aria-expanded={productsOpen} onClick={() => setProductsOpen((open) => !open)}><span aria-hidden="true">⌄</span></button>
+          </div>
           <div className="nav-products-menu" aria-label="Product categories">
             {productCategories.map(([label, href]) => <a href={href} key={label} onClick={() => setMenuOpen(false)}>{label}</a>)}
           </div>
