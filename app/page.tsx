@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Precision optical components illustration">
-          <img src="/baitec-optics-hero.png" alt="Precision lenses, prism, optical window and dome" />
+          <img src="/baitec-optics-hero.webp" alt="Precision lenses, prism, optical window and dome" />
         </div>
       </section>
 
