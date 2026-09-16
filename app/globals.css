@@ -155,8 +155,8 @@ h1 em { font-style:normal; color:#3f9dac; }
 .contact-form-intro>p:last-child { max-width:330px; color:var(--muted); font-size:14px; line-height:1.75; }
 .contact-form-intro a { color:#358f9b; font-weight:700; border-bottom:1px solid #8bc7cc; }
 .contact-form { border-top:1px solid var(--navy); }
-.contact-form label { display:grid; grid-template-columns:115px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--line); }
-.contact-form label>span { padding-top:14px; color:var(--navy); font-size:13px; font-weight:700; letter-spacing:.03em; }
+.contact-form label { display:grid; grid-template-columns:150px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--line); }
+.contact-form label>span { padding-top:14px; color:var(--navy); font-size:13px; font-weight:700; letter-spacing:.03em; white-space:nowrap; }
 .contact-form label>span b { color:#48a5ad; margin-left:4px; }
 .contact-form input,.contact-form textarea { width:100%; border:1px solid #d6dee8; border-radius:3px; background:#f8fafb; color:var(--navy); font:inherit; font-size:15px; outline:none; transition:.2s ease; }
 .contact-form input { height:52px; padding:0 17px; }
