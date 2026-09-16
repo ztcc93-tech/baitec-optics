@@ -25,6 +25,7 @@ const strengths = [
   ["01", "High-precision manufacturing", "Tight tolerances are supported by controlled polishing, experienced technicians and optical metrology."],
   ["02", "True build-to-print customization", "Material, geometry, coating and inspection criteria are developed around your drawing and application."],
   ["03", "Prototype to production", "Flexible support from early-stage samples and low-volume trials through repeat manufacturing."],
+  ["04", "ISO 9001 certified", "Quality management is supported by an ISO 9001 certified manufacturing system."],
 ];
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Precision optical components illustration">
-          <img src="/baitec-optics-hero.webp" alt="Precision lenses, prism, optical window and dome" />
+          <img src="/baitec-optics-hero.png" alt="Precision lenses, prism, optical window and dome" />
         </div>
       </section>
 
@@ -79,8 +80,8 @@ export default function Home() {
       <section className="capabilities section" id="capabilities">
         <div className="capability-intro">
           <p className="kicker">Why Baitec</p>
-          <h2>Precision where it matters.<br />Custom where you need it.</h2>
-          <p>We combine responsive engineering support with established optical manufacturing in Changchun—China&apos;s renowned optical industry base.</p>
+          <h2>Built for precision.<br />Ready for your project.</h2>
+          <p>Custom optical manufacturing backed by experienced engineering and controlled quality management.</p>
           <a className="text-link" href="#contact">Discuss your project <ArrowUpRight /></a>
         </div>
         <div className="strength-list">
