@@ -33,6 +33,14 @@ export default function ContactPage() {
             <input type="text" name="Name" autoComplete="name" placeholder="Your name" required />
           </label>
           <label>
+            <span>Country / Region <b>*</b></span>
+            <input type="text" name="Country / Region" autoComplete="country-name" placeholder="Your country or region" required />
+          </label>
+          <label>
+            <span>Company</span>
+            <input type="text" name="Company" autoComplete="organization" placeholder="Company name (optional)" />
+          </label>
+          <label>
             <span>Inquiry <b>*</b></span>
             <textarea name="Inquiry" rows={8} placeholder="Please tell us about the optical component, specifications and quantity you require." required />
           </label>
