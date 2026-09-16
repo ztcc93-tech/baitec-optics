@@ -43,7 +43,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Precision optical components illustration">
-          <img src="/baitec-optics-hero.png" alt="Precision lenses, prism, optical window and dome" />
+          <picture>
+            <source srcSet="/baitec-optics-hero.webp" type="image/webp" />
+            <img src="/baitec-optics-hero.png" alt="Precision lenses, prism, optical window and dome" />
+          </picture>
         </div>
       </section>
 
