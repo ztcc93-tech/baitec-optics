@@ -2,6 +2,14 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { ArrowUpRight } from "../../components/Icons";
 import ProductSidebar from "../../components/ProductSidebar";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Custom Optical Prisms",
+  "Custom right-angle, penta, Dove, corner cube, beamsplitter, roof, cube and linear prisms for beam steering, image rotation and optical instruments.",
+  "/products/optical-prisms",
+  "/products/categories/02-optical-prisms.webp",
+);
 
 const prismFamilies = [
   { number: "01", name: "Right-Angle Prisms", description: "90-degree beam deviation, image rotation and compact optical path folding.", image: "/products/prisms/right-angle.webp", href: "/products/optical-prisms/right-angle-prisms" },

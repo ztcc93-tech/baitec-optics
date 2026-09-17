@@ -1,5 +1,13 @@
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Custom Infrared Optics",
+  "Custom infrared lenses and windows in ZnSe, ZnS, silicon, germanium, CaF2, MgF2 and other IR materials for thermal imaging, sensing and laser systems.",
+  "/products/infrared-optics",
+  "/products/categories/07-infrared.webp",
+);
 
 const capabilities = [
   "Spherical and aspherical infrared lenses",

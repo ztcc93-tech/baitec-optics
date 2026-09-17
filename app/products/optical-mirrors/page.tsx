@@ -2,6 +2,14 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { ArrowUpRight } from "../../components/Icons";
 import ProductSidebar from "../../components/ProductSidebar";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Custom Optical Mirrors",
+  "Custom flat and spherical optical mirrors with application-specific metallic or dielectric coatings for laser, imaging and optical instrument systems.",
+  "/products/optical-mirrors",
+  "/products/categories/04-mirrors.webp",
+);
 
 const mirrorFamilies = [
   {

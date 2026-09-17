@@ -2,6 +2,14 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { ArrowUpRight } from "../../components/Icons";
 import ProductSidebar from "../../components/ProductSidebar";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Custom Optical Lenses",
+  "Custom plano-convex, plano-concave, bi-convex, bi-concave, meniscus, cemented lenses and optical domes for imaging, laser and illumination systems.",
+  "/products/optical-lenses",
+  "/products/categories/01-optical-lenses.webp",
+);
 
 const lensFamilies = [
   {

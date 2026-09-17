@@ -2,6 +2,14 @@ import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 import { ArrowUpRight } from "../components/Icons";
 import ProductSidebar from "../components/ProductSidebar";
+import { productMetadata } from "./seo";
+
+export const metadata = productMetadata(
+  "Custom Optical Components",
+  "Explore custom lenses, prisms, optical windows, mirrors, filters, beam-shaping components, infrared optics and OEM optical solutions.",
+  "/products",
+  "/products/categories/01-optical-lenses.webp",
+);
 
 const categories = [
   {

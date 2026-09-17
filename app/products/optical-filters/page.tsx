@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
+import { productMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Custom Optical Filters | Baitec Optics",
-  description: "Custom optical filters manufactured in optical glass and fused silica with controlled surface accuracy, parallelism, clear aperture and optical coatings.",
-};
+const description = "Custom bandpass, longpass, shortpass and neutral-density optical filters for spectroscopy, imaging, machine vision, sensing and laser systems.";
+export const metadata = productMetadata("Custom Optical Filters", description, "/products/optical-filters", "/products/categories/06-filters.webp");
 
 const specifications = [
   ["Material", "JGS1 / N-BK7 / JGS3 / H-K9L"],
@@ -25,7 +23,7 @@ export default function OpticalFiltersPage() {
     <SiteHeader />
     <section className="compact-product-detail section">
       <div className="breadcrumb"><a href="/">Home</a><span>/</span><a href="/products">Products</a><span>/</span><b>Optical Filters</b></div>
-      <header className="compact-product-heading"><h1>Optical Filters</h1><p>Custom optical filters manufactured to customer specifications.</p></header>
+      <header className="compact-product-heading"><h1>Optical Filters</h1><p>{description}</p></header>
       <div className="compact-product-grid">
         <div className="compact-product-photo"><img src="/products/categories/06-filters.webp" alt="Custom optical filters" /></div>
         <div className="compact-specifications">
