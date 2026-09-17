@@ -2,6 +2,14 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { ArrowUpRight } from "../../components/Icons";
 import ProductSidebar from "../../components/ProductSidebar";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Optical Windows & Flat Optics",
+  "Custom round, rectangular, wedged and infrared optical windows plus high-precision optical flats for protection, transmission and metrology.",
+  "/products/windows-flat-optics",
+  "/products/categories/03-windows.webp",
+);
 
 const windowFamilies = [
   {

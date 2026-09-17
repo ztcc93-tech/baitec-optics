@@ -1,4 +1,8 @@
 import PrismDetailPage from "../../../components/PrismDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom penta prisms for fixed 90-degree beam deviation in surveying, alignment, metrology and optical instrument systems.";
+export const metadata = productMetadata("Penta Prisms", description, "/products/optical-prisms/penta-prisms", "/products/prisms/penta.webp");
 
 const specifications = [
   ["Material", "H-K9L / N-BK7"], ["Dimensional Tolerance", "±0.1 mm"], ["Angle Tolerance", "≤2 arcsec"],
@@ -6,4 +10,4 @@ const specifications = [
   ["Bevel", "<0.2 mm × 45°"], ["Coating", "Custom Coatings Available"],
 ] as const;
 
-export default function Page() { return <PrismDetailPage title="Penta Prisms" description="Precision penta prisms manufactured to customer specifications." image="/products/prisms/penta.webp" specifications={specifications} />; }
+export default function Page() { return <PrismDetailPage title="Penta Prisms" description={description} image="/products/prisms/penta.webp" specifications={specifications} />; }

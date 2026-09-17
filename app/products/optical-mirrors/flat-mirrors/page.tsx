@@ -1,4 +1,8 @@
 import MirrorDetailPage from "../../../components/MirrorDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom flat optical mirrors with metallic or dielectric coatings for laser beam steering, imaging, interferometry and optical instruments.";
+export const metadata = productMetadata("Flat Optical Mirrors", description, "/products/optical-mirrors/flat-mirrors", "/products/mirrors/flat-mirror.webp");
 
 const specifications = [
   ["Material", "Sapphire / N-BK7 / H-K9L / Fused Silica"], ["Design Wavelength", "Customer Specified"],
@@ -7,4 +11,4 @@ const specifications = [
   ["Coating", "Custom Coatings Available"],
 ] as const;
 
-export default function Page() { return <MirrorDetailPage title="Flat Mirrors" description="Precision flat mirrors manufactured with custom reflective coatings." image="/products/mirrors/flat-mirror.webp" specifications={specifications} />; }
+export default function Page() { return <MirrorDetailPage title="Flat Mirrors" description={description} image="/products/mirrors/flat-mirror.webp" specifications={specifications} />; }

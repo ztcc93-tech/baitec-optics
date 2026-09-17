@@ -1,4 +1,8 @@
 import PrismDetailPage from "../../../components/PrismDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom linear prisms for laser line generation, beam deviation, illumination shaping, machine vision and optical inspection systems.";
+export const metadata = productMetadata("Linear Prisms", description, "/products/optical-prisms/linear-prisms", "/products/prisms/linear.webp");
 
 const specifications = [
   ["Material", "N-BK7 / H-K9L"], ["Dimensional Tolerance", "±0.1 mm"], ["Angle Tolerance", "±3 arcsec"],
@@ -6,4 +10,4 @@ const specifications = [
   ["Parallelism", "≤30 arcsec"], ["Clear Aperture", ">90%"], ["Bevel", "<0.2 mm × 45°"], ["Coating", "Custom Coatings Available"],
 ] as const;
 
-export default function Page() { return <PrismDetailPage title="Linear Prisms" description="Precision linear prisms manufactured to customer specifications." image="/products/prisms/linear.webp" specifications={specifications} />; }
+export default function Page() { return <PrismDetailPage title="Linear Prisms" description={description} image="/products/prisms/linear.webp" specifications={specifications} />; }

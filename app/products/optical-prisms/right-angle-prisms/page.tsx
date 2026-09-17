@@ -1,4 +1,8 @@
 import PrismDetailPage from "../../../components/PrismDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom right-angle prisms for 90-degree beam turning, image reflection, laser alignment, periscopes and optical instrument assemblies.";
+export const metadata = productMetadata("Right-Angle Prisms", description, "/products/optical-prisms/right-angle-prisms", "/products/prisms/right-angle.webp");
 
 const specifications = [
   ["Material", "H-K9L / N-BK7"],
@@ -12,5 +16,5 @@ const specifications = [
 ];
 
 export default function RightAnglePrismsPage() {
-  return <PrismDetailPage title="Right-Angle Prisms" description="Precision right-angle prisms manufactured to customer specifications." image="/products/prisms/right-angle.webp" specifications={specifications} />;
+  return <PrismDetailPage title="Right-Angle Prisms" description={description} image="/products/prisms/right-angle.webp" specifications={specifications} />;
 }

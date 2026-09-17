@@ -2,6 +2,14 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { ArrowUpRight } from "../../components/Icons";
 import ProductSidebar from "../../components/ProductSidebar";
+import { productMetadata } from "../seo";
+
+export const metadata = productMetadata(
+  "Beam Shaping Optics",
+  "Custom Powell prisms, optical integrators and array integrators for laser line generation, beam homogenization and controlled illumination.",
+  "/products/beam-shaping-optics",
+  "/products/categories/05-beam-shaping.webp",
+);
 
 const beamShapingFamilies = [
   {

@@ -1,4 +1,8 @@
 import PrismDetailPage from "../../../components/PrismDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom corner cube prisms and retroreflectors for surveying, laser tracking, alignment, metrology and optical distance measurement.";
+export const metadata = productMetadata("Corner Cube Prisms", description, "/products/optical-prisms/corner-cube-prisms", "/products/prisms/corner-cube.webp");
 
 const specifications = [
   ["Material", "N-BK7 / H-K9L"], ["Dimensional Tolerance", "±0.1 mm"], ["Angle Tolerance", "±2 arcsec"],
@@ -6,4 +10,4 @@ const specifications = [
   ["Clear Aperture", ">90%"], ["Bevel", "<0.2 mm × 45°"], ["Coating", "Custom Coatings Available"],
 ] as const;
 
-export default function Page() { return <PrismDetailPage title="Corner Cube Prisms" description="Precision corner cube prisms manufactured to customer specifications." image="/products/prisms/corner-cube.webp" specifications={specifications} />; }
+export default function Page() { return <PrismDetailPage title="Corner Cube Prisms" description={description} image="/products/prisms/corner-cube.webp" specifications={specifications} />; }

@@ -1,4 +1,8 @@
 import PrismDetailPage from "../../../components/PrismDetailPage";
+import { productMetadata } from "../../seo";
+
+const description = "Custom Dove prisms for image rotation and inversion in imaging systems, machine vision, optical inspection and scientific instruments.";
+export const metadata = productMetadata("Dove Prisms", description, "/products/optical-prisms/dove-prisms", "/products/prisms/dove.webp");
 
 const specifications = [
   ["Material", "N-BK7 / H-K9L"], ["Dimensional Tolerance", "±0.1 mm"], ["Angle Tolerance", "±2 arcsec"],
@@ -6,4 +10,4 @@ const specifications = [
   ["Bevel", "<0.2 mm × 45°"], ["Coating", "Custom Coatings Available"],
 ] as const;
 
-export default function Page() { return <PrismDetailPage title="Dove Prisms" description="Precision Dove prisms manufactured to customer specifications." image="/products/prisms/dove.webp" specifications={specifications} />; }
+export default function Page() { return <PrismDetailPage title="Dove Prisms" description={description} image="/products/prisms/dove.webp" specifications={specifications} />; }

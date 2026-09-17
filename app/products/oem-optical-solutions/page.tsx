@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
+import { productMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "OEM Optical Design Services | Custom Optical Systems | Baitec Optics",
-  description: "Baitec Optics provides OEM optical design services for imaging, projection, laser scanning, measurement and machine vision systems, with prototype and custom production support.",
-  keywords: ["OEM optical design", "custom optical system design", "industrial lens design", "custom industrial lenses", "machine vision optics", "optical design services"],
-};
+export const metadata = productMetadata(
+  "OEM Optical Design Services",
+  "Custom optical system and industrial lens design for imaging, projection, laser scanning, measurement and machine vision, from prototype through production.",
+  "/products/oem-optical-solutions",
+  "/products/categories/08-oem-solutions.webp",
+);
 
 const conventional = ["Microscopy Systems", "Telescopic and Long-Range Imaging Systems", "Camera and Imaging Lenses", "Projection Optical Systems"];
 
