@@ -7,4 +7,4 @@ export const metadata = {
     "Custom precision plano-convex lenses manufactured to customer drawings and specifications. Available in optical glass, fused silica and crystalline materials for prototypes and production.",
 };
 
-export default function Page() { return <LensDetailPage title="Plano-Convex Lenses" description="Precision plano-convex lenses for collimation, focusing, and imaging." image="/products/lenses/plano-convex.webp" specifications={standardLensSpecifications} />; }
+export default function Page() { return <LensDetailPage title="Plano-Convex Lenses" description="Custom precision plano-convex lenses manufactured to customer drawings and specifications for collimation, focusing, imaging, and other optical applications." image="/products/lenses/plano-convex.webp" specifications={standardLensSpecifications} />; }
