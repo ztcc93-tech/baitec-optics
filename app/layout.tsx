@@ -19,10 +19,11 @@ export const metadata: Metadata = {
   other: {
     "codex-preview": "development",
   },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
+ icons: {
+  icon: [{ url: "/favicon.png?v=2", type: "image/png", sizes: "512x512" }],
+  shortcut: "/favicon.png?v=2",
+  apple: "/favicon.png?v=2",
+},
   alternates: {
     canonical: "/",
   },
