@@ -1,6 +1,6 @@
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
-import { ArrowUpRight } from "../components/Icons";
+import InquiryForm from "../components/InquiryForm";
 
 export default function ContactPage() {
   return (
@@ -23,29 +23,7 @@ export default function ContactPage() {
           <p>You can also contact us directly at <a href="mailto:sales@baitecoptics.com">sales@baitecoptics.com</a></p>
         </div>
 
-        <form className="contact-form" action="mailto:sales@baitecoptics.com" method="post" encType="text/plain">
-          <label>
-            <span>Email <b>*</b></span>
-            <input type="email" name="Email" autoComplete="email" placeholder="your@email.com" required />
-          </label>
-          <label>
-            <span>Name <b>*</b></span>
-            <input type="text" name="Name" autoComplete="name" placeholder="Your name" required />
-          </label>
-          <label>
-            <span>Country / Region <b>*</b></span>
-            <input type="text" name="Country / Region" autoComplete="country-name" placeholder="Your country or region" required />
-          </label>
-          <label>
-            <span>Company</span>
-            <input type="text" name="Company" autoComplete="organization" placeholder="Company name (optional)" />
-          </label>
-          <label>
-            <span>Inquiry <b>*</b></span>
-            <textarea name="Inquiry" rows={8} placeholder="Please tell us about the optical component, specifications and quantity you require." required />
-          </label>
-          <button className="button contact-submit" type="submit">Send inquiry <ArrowUpRight /></button>
-        </form>
+        <InquiryForm />
       </section>
 
       <SiteFooter />
