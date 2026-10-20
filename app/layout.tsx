@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import SocialRail from "./components/SocialRail";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,19 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://baitecoptics.com"),
   title: "Baitec Optics | Custom Precision Optical Components",
   description: "Custom lenses, windows, prisms, domes and infrared optical components manufactured in Changchun, China.",
   other: {
     "codex-preview": "development",
   },
- icons: {
-  icon: [{ url: "/favicon.png?v=2", type: "image/png", sizes: "512x512" }],
-  shortcut: "/favicon.png?v=2",
-  apple: "/favicon.png?v=2",
-},
-  alternates: {
-    canonical: "/",
+  icons: {
+    icon: [{ url: "/favicon.png?v=2", type: "image/png", sizes: "512x512" }],
+    shortcut: "/favicon.png?v=2",
+    apple: "/favicon.png?v=2",
   },
 };
 
@@ -40,6 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <SocialRail />
       </body>
     </html>
   );

@@ -3,29 +3,20 @@ import SiteHeader from "./components/SiteHeader";
 import { ArrowDown, ArrowUpRight } from "./components/Icons";
 
 const products = [
-  { number: "01", name: "Optical Lenses", summary: "Precision imaging and beam control", items: ["Plano-Convex", "Positive Meniscus", "Bi-Convex", "Three-Element Cemented", "Plano-Concave", "Bi-Concave", "Optical Domes"], mark: "◒", href: "/products/optical-lenses" },
-  { number: "02", name: "Optical Prisms", summary: "Beam steering, rotation and splitting", items: ["Right-Angle Prisms", "Penta Prisms", "Dove Prisms", "Corner Cube Prisms", "Beamsplitter Prisms", "Roof Prisms", "Cube Prisms", "Linear Prisms"], mark: "△", href: "/products/optical-prisms" },
-  { number: "03", name: "Windows & Flat Optics", summary: "Protection, transmission and reference flats", items: ["Round Windows", "Rectangular Windows", "Wedge Windows", "High-Precision Optical Flats", "Infrared Windows"], mark: "▣", href: "/products/windows-flat-optics" },
-  { number: "04", name: "Optical Mirrors", summary: "Reflective optics for focusing and steering", items: ["Spherical Mirrors", "Flat Mirrors"], mark: "◐", href: "/products/optical-mirrors" },
-  { number: "05", name: "Beam Shaping Optics", summary: "Purpose-built profiles for laser and illumination", items: ["Powell Prisms", "Optical Integrators", "Array Integrators"], mark: "≈", href: "/products/beam-shaping-optics" },
-  { number: "06", name: "Optical Filters", summary: "Precise spectral selection and attenuation", items: [], mark: "◎", href: "/products/optical-filters" },
-  { number: "07", name: "Infrared Optics", summary: "Components engineered for infrared applications", items: [], mark: "◇", href: "/products/infrared-optics" },
-  { number: "08", name: "OEM Optical Solutions", summary: "Engineering and production support for custom optics", items: [], mark: "✦", href: "/products/oem-optical-solutions" },
+  { number: "01", name: "Optical Lenses", summary: "Spherical, cylindrical and specialty lenses", image: "/homepage/categories/optical-lenses.png", href: "/products/optical-lenses" },
+  { number: "02", name: "Optical Windows", summary: "Precision windows, flats and filters", image: "/homepage/categories/optical-windows.png", href: "/products/windows-flat-optics" },
+  { number: "03", name: "Optical Prisms", summary: "Beam steering, rotation and splitting", image: "/homepage/categories/optical-prisms.png", href: "/products/optical-prisms" },
+  { number: "04", name: "Optical Mirrors", summary: "Reflective optics for focusing and steering", image: "/homepage/categories/optical-mirrors.png", href: "/products/optical-mirrors" },
+  { number: "05", name: "Optical Domes", summary: "Protective optics for wide-angle systems", image: "/homepage/categories/optical-domes.png", href: "/products/optical-domes" },
+  { number: "06", name: "Infrared Optics", summary: "Components for infrared applications", image: "/homepage/categories/infrared-optics.png", href: "/products/infrared-optics" },
+  { number: "07", name: "Custom Optics & OEM Optical Solutions", summary: "Build-to-print components and assemblies", image: "/homepage/categories/custom-oem-optics.png", href: "/products/oem-optical-solutions" },
 ];
 
-const productItemPaths: Record<string, string[]> = {
-  "Optical Lenses": ["plano-convex-lenses", "positive-meniscus-lenses", "bi-convex-lenses", "three-element-cemented-lenses", "plano-concave-lenses", "bi-concave-lenses", "optical-domes"],
-  "Optical Prisms": ["right-angle-prisms", "penta-prisms", "dove-prisms", "corner-cube-prisms", "beamsplitter-prisms", "roof-prisms", "cube-prisms", "linear-prisms"],
-  "Windows & Flat Optics": ["round-windows", "rectangular-windows", "wedge-windows", "high-precision-optical-flats", "infrared-windows"],
-  "Optical Mirrors": ["spherical-mirrors", "flat-mirrors"],
-  "Beam Shaping Optics": ["powell-prisms", "optical-integrators", "array-integrators"],
-};
-
 const strengths = [
-  ["01", "High-precision manufacturing", "Tight tolerances are supported by controlled polishing, experienced technicians and optical metrology."],
-  ["02", "True build-to-print customization", "Material, geometry, coating and inspection criteria are developed around your drawing and application."],
-  ["03", "Prototype to production", "Flexible support from early-stage samples and low-volume trials through repeat manufacturing."],
-  ["04", "ISO 9001 certified", "Quality management is supported by an ISO 9001 certified manufacturing system."],
+  ["01", "One-Stop Optical Fabrication", "Integrated fabrication for flat, cylindrical and spherical lenses and prisms."],
+  ["02", "Built to Your Specifications", "Custom materials, dimensions, surface quality and coatings to your drawings."],
+  ["03", "Flexible Production", "Prototypes, small batches and volume orders in visible and infrared materials."],
+  ["04", "Consistent Quality & Reliable Lead Times", "Controlled production and inspection support consistent quality and reliable lead times."],
 ];
 
 export default function Home() {
@@ -55,46 +46,26 @@ export default function Home() {
           <div><p className="kicker">High-precision custom optics</p><h2>Optics for ideas<br />that need clarity.</h2></div>
           <p>Choose a product family, then define the material, dimensions, tolerances, coating and inspection criteria your system requires.</p>
         </div>
-        <div className="product-grid">
+        <div className="home-product-grid">
           {products.map((product) => (
-            <article className="product-card" key={product.name}>
-              <a className="card-hit-area" href={product.href} aria-label={`View ${product.name}`} />
-              <div className="product-card-top">
-                <span className="product-number">{product.number}</span>
-                <span className="product-mark">{product.mark}</span>
-                {product.href
-                  ? <a className="card-arrow" href={product.href} aria-label={`View ${product.name}`}><ArrowUpRight /></a>
-                  : <span className="card-arrow"><ArrowUpRight /></span>}
-              </div>
-              <div className="product-content">
-                <div className="product-title"><h3>{product.href ? <a href={product.href}>{product.name}</a> : product.name}</h3><p>{product.summary}</p></div>
-                {product.items.length > 0 && (
-                  <ul>{product.items.map((item, index) => (
-                    <li key={item}><a href={`${product.href}/${productItemPaths[product.name][index]}`}>{item}</a></li>
-                  ))}</ul>
-                )}
-                <span className="custom-label">CUSTOM MADE</span>
-              </div>
-            </article>
+            <a className="home-product-card" href={product.href} key={product.name}>
+              <div className="home-product-image"><img src={product.image} alt={`${product.name} product range`} /><span>{product.number}</span></div>
+              <div className="home-product-copy"><div><h3>{product.name}</h3><p>{product.summary}</p></div><ArrowUpRight /></div>
+            </a>
           ))}
         </div>
       </section>
 
       <section className="capabilities section" id="capabilities">
-        <div className="capability-intro">
-          <p className="kicker">Why Baitec</p>
-          <h2>Built for precision.<br />Ready for your project.</h2>
-          <p>Custom optical manufacturing backed by experienced engineering and controlled quality management.</p>
-          <a className="text-link" href="#contact">Discuss your project <ArrowUpRight /></a>
-        </div>
-        <div className="strength-list">
+        <div className="why-baitec-image"><img src="/homepage/high-precision-inspection.png" alt="High-precision optical inspection equipment" /></div>
+        <div className="why-baitec-content"><p className="kicker">Why Choose Us</p><h2>Built for precision.<br />Ready for your project.</h2><div className="strength-list">
           {strengths.map(([number, title, text]) => (
             <article key={number}>
               <span>{number}</span>
               <div><h3>{title}</h3><p>{text}</p></div>
             </article>
           ))}
-        </div>
+        </div></div>
       </section>
 
       <section className="process section" id="process">
