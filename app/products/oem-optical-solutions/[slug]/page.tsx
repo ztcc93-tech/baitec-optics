@@ -1,3 +1,9 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  return getSeoMetadata("/products/oem-optical-solutions/" + slug);
+}
+
 import CustomCatalogDetailPage from "../../../components/CustomCatalogDetailPage";
 import { getCategory } from "../../../data/productCatalog";
 const category = getCategory("custom")!;

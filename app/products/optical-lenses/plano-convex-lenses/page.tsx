@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/optical-lenses/plano-convex-lenses");
+
 import PrismDetailPage from "../../../components/PrismDetailPage";
 import { getLensGalleryImages } from "../../../data/lensProductDetails";
 

@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/windows-flat-optics/round-optical-windows");
+
 import PrismDetailPage from "../../../components/PrismDetailPage";
 
 const images = [

@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../data/seoMetadata";
+export const metadata = getSeoMetadata("/contact");
+
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 import InquiryForm from "../components/InquiryForm";

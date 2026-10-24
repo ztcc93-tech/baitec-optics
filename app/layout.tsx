@@ -16,9 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Baitec Optics | Custom Precision Optical Components",
   description: "Custom lenses, windows, prisms, domes and infrared optical components manufactured in Changchun, China.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: [{ url: "/favicon.png?v=2", type: "image/png", sizes: "512x512" }],
     shortcut: "/favicon.png?v=2",

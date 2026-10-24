@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../data/seoMetadata";
+export const metadata = getSeoMetadata("/products");
+
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 import { ArrowUpRight } from "../components/Icons";
