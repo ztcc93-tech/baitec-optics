@@ -33,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [{ "@type": "Organization", "@id": "https://baitecoptics.com/#organization", name: "Baitec Optics", url: "https://baitecoptics.com", logo: "https://baitecoptics.com/baitec-logo.png", email: "sales@baitecoptics.com", telephone: "+86 166 4370 9988" }, { "@type": "WebSite", "@id": "https://baitecoptics.com/#website", url: "https://baitecoptics.com", name: "Baitec Optics", publisher: { "@id": "https://baitecoptics.com/#organization" } }] }) }} />
         {children}
         <SocialRail />
       </body>

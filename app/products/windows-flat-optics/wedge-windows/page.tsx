@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/windows-flat-optics/wedge-windows");
+
 import WindowDetailPage from "../../../components/WindowDetailPage";
 
 const specifications = [

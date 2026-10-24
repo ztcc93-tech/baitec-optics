@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/beam-shaping-optics/optical-integrators");
+
 import BeamShapingDetailPage from "../../../components/BeamShapingDetailPage";
 
 const specifications = [

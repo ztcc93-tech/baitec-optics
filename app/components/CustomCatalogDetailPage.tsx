@@ -1,3 +1,4 @@
+import { customProductCopy } from "../data/customProductCopy";
 import PrismDetailPage from "./PrismDetailPage";
 import { getCustomGalleryImages, getCustomProductDetail } from "../data/customProductDetails";
 
@@ -13,7 +14,8 @@ export default function CustomCatalogDetailPage({ slug }: { slug: string }) {
     images={images}
     categoryName="Custom Optics & OEM Optical Solutions"
     categoryHref="/products/oem-optical-solutions"
-    applications={product.applications}
+    overview={customProductCopy[slug]?.overview}
+    applications={product.applications ?? customProductCopy[slug]?.applications}
     specifications={product.specifications ?? []}
     showSpecificationsNote={false}
   />;

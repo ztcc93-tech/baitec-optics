@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/optical-mirrors/spherical-mirrors");
+
 import MirrorDetailPage from "../../../components/MirrorDetailPage";
 
 const specifications = [

@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/windows-flat-optics/high-precision-optical-flats");
+
 import WindowDetailPage from "../../../components/WindowDetailPage";
 
 const specifications = [

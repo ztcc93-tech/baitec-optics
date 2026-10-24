@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/beam-shaping-optics/powell-prisms");
+
 import BeamShapingDetailPage from "../../../components/BeamShapingDetailPage";
 
 const specifications = [

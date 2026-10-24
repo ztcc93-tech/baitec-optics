@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
+import { getSeoMetadata } from "../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/optical-filters");
+
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 
-export const metadata: Metadata = {
-  title: "Custom Optical Filters | Baitec Optics",
-  description: "Custom optical filters manufactured in optical glass and fused silica with controlled surface accuracy, parallelism, clear aperture and optical coatings.",
-};
 
 const specifications = [
   ["Material", "JGS1 / N-BK7 / JGS3 / H-K9L"],

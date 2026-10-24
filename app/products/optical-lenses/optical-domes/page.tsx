@@ -1,3 +1,6 @@
+import { getSeoMetadata } from "../../../data/seoMetadata";
+export const metadata = getSeoMetadata("/products/optical-lenses/optical-domes");
+
 import LensDetailPage from "../../../components/LensDetailPage";
 const specifications = [
   ["Material", "Sapphire / Fused Silica / N-BK7 / H-K9L"], ["Outer Diameter Tolerance", "+0.0 / −0.1 mm"],

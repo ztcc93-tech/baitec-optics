@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoRedirects } from "./seoRedirects";
 
 const pageMetadata: Record<string, Metadata> = {
   "/products": {
@@ -240,9 +241,99 @@ const pageMetadata: Record<string, Metadata> = {
   "/contact": {
     "title": "Contact Baitec Optics | Request a Custom Optics Quote",
     "description": "Contact Baitec Optics for a custom optics quote. Send your drawing, material, dimensions, tolerances, coatings and quantity for manufacturing review."
+  },
+  "/products/optical-prisms/cemented-prism-assemblies": {
+    "title": "Custom Cemented Prism Assemblies | Baitec Optics",
+    "description": "Custom cemented prism assemblies for beam routing with bonded optical elements. Specify geometry, materials, alignment and coatings. Request a quote."
+  },
+  "/products/optical-prisms/custom-shaped-prisms-variant-25": {
+    "title": "Custom-Shaped Optical Prisms | Baitec Optics",
+    "description": "Custom-shaped optical prisms for nonstandard beam routing and optical assemblies. Send your geometry, material and coating requirements for review."
+  },
+  "/faq": {
+    "title": "Custom Optics Manufacturing FAQ | Baitec Optics",
+    "description": "Answers about custom optical components, materials, coatings, prototypes, quotation requirements and lead times. Send your drawing for manufacturing review."
+  },
+  "/news": {
+    "title": "News | Baitec Optics",
+    "description": "Company news and updates from Baitec Optics, a supplier of custom precision optical components in Changchun, China."
+  },
+  "/products/optical-filters": {
+    "title": "Custom Optical Filters | Baitec Optics",
+    "description": "Explore custom optical filters from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/beam-shaping-optics": {
+    "title": "Custom Beam Shaping Optics | Baitec Optics",
+    "description": "Explore custom beam shaping optics from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/windows-flat-optics/wedge-windows": {
+    "title": "Custom Wedge Windows | Baitec Optics",
+    "description": "Explore custom wedge windows from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/windows-flat-optics/infrared-windows": {
+    "title": "Custom Infrared Windows | Baitec Optics",
+    "description": "Explore custom infrared windows from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/windows-flat-optics/rectangular-windows": {
+    "title": "Custom Rectangular Windows | Baitec Optics",
+    "description": "Explore custom rectangular windows from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/windows-flat-optics/round-windows": {
+    "title": "Custom Round Windows | Baitec Optics",
+    "description": "Explore custom round windows from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/windows-flat-optics/high-precision-optical-flats": {
+    "title": "Custom High Precision Optical Flats | Baitec Optics",
+    "description": "Explore custom high precision optical flats from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-mirrors/spherical-mirrors": {
+    "title": "Custom Spherical Mirrors | Baitec Optics",
+    "description": "Explore custom spherical mirrors from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-mirrors/flat-mirrors": {
+    "title": "Custom Flat Mirrors | Baitec Optics",
+    "description": "Explore custom flat mirrors from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/beam-shaping-optics/optical-integrators": {
+    "title": "Custom Optical Integrators | Baitec Optics",
+    "description": "Explore custom optical integrators from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/beam-shaping-optics/array-integrators": {
+    "title": "Custom Array Integrators | Baitec Optics",
+    "description": "Explore custom array integrators from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/beam-shaping-optics/powell-prisms": {
+    "title": "Custom Powell Prisms | Baitec Optics",
+    "description": "Explore custom powell prisms from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-prisms/linear-prisms": {
+    "title": "Custom Linear Prisms | Baitec Optics",
+    "description": "Explore custom linear prisms from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-prisms/cube-prisms": {
+    "title": "Custom Cube Prisms | Baitec Optics",
+    "description": "Explore custom cube prisms from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-lenses/optical-domes": {
+    "title": "Custom Optical Domes | Baitec Optics",
+    "description": "Explore custom optical domes from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-lenses/plano-concave-lenses": {
+    "title": "Custom Plano Concave Lenses | Baitec Optics",
+    "description": "Explore custom plano concave lenses from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-lenses/positive-meniscus-lenses": {
+    "title": "Custom Positive Meniscus Lenses | Baitec Optics",
+    "description": "Explore custom positive meniscus lenses from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
+  },
+  "/products/optical-lenses/three-element-cemented-lenses": {
+    "title": "Custom Three Element Cemented Lenses | Baitec Optics",
+    "description": "Explore custom three element cemented lenses from Baitec Optics. Send your drawing, optical material, dimensions and coating requirements for manufacturing review."
   }
 };
 
 export function getSeoMetadata(path: string): Metadata {
-  return pageMetadata[path] ?? {};
+  const canonicalPath = seoRedirects[path] ?? path;
+  const metadata = pageMetadata[canonicalPath] ?? {};
+  return { ...metadata, alternates: { canonical: `https://baitecoptics.com${canonicalPath === "/" ? "" : canonicalPath}` } };
 }
