@@ -6,9 +6,9 @@ import { ArrowUpRight } from "./Icons";
 import type { CatalogCategory } from "../data/productCatalog";
 
 export default function ProductCategoryFramework({ category }: { category: CatalogCategory }) {
-  const capability = categoryCapabilities[category.id];
-  const showProductImages = category.id === "prisms" || category.id === "lenses" || category.id === "windows" || category.id === "mirrors" || category.id === "custom";
-  const galleryPath = category.id === "lenses" ? "lenses" : category.id === "windows" ? "windows" : category.id === "mirrors" ? "mirrors" : category.id === "custom" ? "custom" : "prisms";
+  const capability = (category.id === "infrared" || category.id === "domes") ? undefined : categoryCapabilities[category.id];
+  const showProductImages = category.id === "prisms" || category.id === "lenses" || category.id === "windows" || category.id === "mirrors" || category.id === "custom" || category.id === "infrared" || category.id === "domes";
+  const galleryPath = category.id === "domes" ? "domes" : category.id === "infrared" ? "infrared" : category.id === "lenses" ? "lenses" : category.id === "windows" ? "windows" : category.id === "mirrors" ? "mirrors" : category.id === "custom" ? "custom" : "prisms";
   return <main><SiteHeader />
     <section className="products-page-hero compact-category-hero">
       <div className="breadcrumb"><a href="/">Home</a><span>/</span><a href="/products">Products</a><span>/</span><b>{category.name}</b></div>

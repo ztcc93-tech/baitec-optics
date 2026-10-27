@@ -20,14 +20,15 @@ type Props = {
   specificationGrades?: readonly SpecificationGrade[];
   specifications: readonly Specification[];
   showSpecificationsNote?: boolean;
+  specificationsNote?: string;
 };
 
-export default function PrismDetailPage({ title, description, image, categoryName = "Optical Prisms", categoryHref = "/products/optical-prisms", images, overview, applications, specificationGrades, specifications, showSpecificationsNote = true }: Props) {
+export default function PrismDetailPage({ title, description, image, categoryName = "Optical Prisms", categoryHref = "/products/optical-prisms", images, overview, applications, specificationGrades, specifications, showSpecificationsNote = true, specificationsNote }: Props) {
   const productImage = images?.length ? <ProductImageGallery images={images} title={title} /> : <div className="compact-product-photo"><img src={image} alt={title} /></div>;
   const specificationsContent = <>
     <h2>Typical Specifications</h2>
     {specificationGrades?.length === 2 ? <div className="specifications-table-wrap"><table className="specifications-table grade-comparison-table"><thead><tr><th>Parameter</th><th>{specificationGrades[0].title}</th><th>{specificationGrades[1].title}</th></tr></thead><tbody>{specificationGrades[0].items.map(([label, standardValue], index) => <tr key={label}><th scope="row">{label}</th><td>{standardValue}</td><td>{specificationGrades[1].items[index][1]}</td></tr>)}</tbody></table></div> : <table className="specifications-table"><tbody>{specifications.map(([label, value]) => <tr key={label}><th scope="row">{label}</th><td>{value}</td></tr>)}</tbody></table>}
-    {showSpecificationsNote ? <p className="specifications-note"><em>Other specifications, materials, and coatings are available upon request.</em></p> : null}
+    {showSpecificationsNote ? <p className="specifications-note"><em>{specificationsNote ?? "Other specifications, materials, and coatings are available upon request."}</em></p> : null}
   </>;
   const hasProductCopy = Boolean(overview?.length || applications?.length);
   const hasSpecifications = Boolean(specificationGrades?.length || specifications.length);
