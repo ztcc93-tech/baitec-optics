@@ -1,4 +1,5 @@
 export const seoRedirects: Record<string, string> = {
+  "/news": "/insight",
   "/products/optical-prisms/cemented-prism-assemblies-variant-1": "/products/optical-prisms/cemented-prism-assemblies",
   "/products/optical-prisms/cemented-prism-assemblies-variant-2": "/products/optical-prisms/cemented-prism-assemblies",
   "/products/optical-prisms/cemented-prism-assemblies-unnumbered": "/products/optical-prisms/cemented-prism-assemblies",

@@ -8,6 +8,7 @@ const navigation = [
   ["Home", "/#top"],
   ["About Us", "/about"],
   ["Workshop Equipment", "/workshop-equipment"],
+  ["Insight", "/insight"],
   ["FAQ", "/faq"],
   ["Contact Us", "/contact"],
 ];
