@@ -16,6 +16,129 @@ export type InsightArticle = {
 };
 // Add approved articles here. Dates represent actual publication and revision dates.
 export const insightArticles: InsightArticle[] = [
+{
+  "slug": "how-to-request-a-quote-for-custom-optical-components",
+  "title": "How to Request a Quote for Custom Optical Components: A Practical Checklist",
+  "description": "A practical RFQ checklist covering drawings, optical materials, dimensions, tolerances, surface requirements, coatings, quantities and delivery.",
+  "seoTitle": "Custom Optical Components RFQ Checklist | Baitec Optics",
+  "seoDescription": "Request a quote for custom optical components with a practical checklist of drawings, materials, tolerances, coatings, quantities and delivery requirements.",
+  "category": "Manufacturing",
+  "publishedAt": "2026-11-01",
+  "image": "/insight/custom-optics-rfq-checklist.png",
+  "imageAlt": "Optical lenses, a prism and coated windows on a technical drawing beside a caliper",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "When sourcing custom optical components, a clear quotation request helps the manufacturer evaluate your requirements, identify missing information, and prepare a relevant quotation.",
+        "Whether you need optical lenses, windows, prisms, or mirrors, the information you provide affects how accurately the supplier can assess manufacturing feasibility, pricing, and lead time.",
+        "This checklist explains what to include when requesting a quote for custom optics."
+      ]
+    },
+    {
+      "heading": "1. Technical Drawings or Available Specifications",
+      "paragraphs": [
+        "A technical drawing is usually the most useful starting point. It brings the component’s geometry, dimensions, tolerances, and optical requirements into one document.",
+        "If available, include:"
+      ],
+      "bullets": [
+        "A dimensioned 2D drawing, with the drawing number and revision.",
+        "A 3D model to clarify complex shapes or mechanical features.",
+        "Supporting data referenced in the drawing, such as an aspheric surface prescription or sag table."
+      ],
+      "after": [
+        "For optical components, a 3D model alone may not define all the requirements needed for manufacturing and inspection. Optical tolerances and coating specifications should also be provided.",
+        "If you do not have a complete drawing, send the specifications you already know and describe the intended application. Photos can help explain the component’s appearance, but they generally cannot establish its material, curvature, or optical performance."
+      ]
+    },
+    {
+      "heading": "2. Optical Material",
+      "paragraphs": [
+        "Specify the material and exact glass grade where possible. Examples include N-BK7, fused silica, calcium fluoride (CaF₂), zinc selenide (ZnSe), silicon, and germanium.",
+        "For optical glass, include the manufacturer and grade if these are specified in your design. If alternative materials are acceptable, state whether substitutions require your approval.",
+        "If the material has not yet been selected, provide the operating wavelength range and relevant environmental conditions. This gives the supplier a basis for discussing suitable options."
+      ]
+    },
+    {
+      "heading": "3. Dimensions and Tolerances",
+      "paragraphs": [
+        "Provide the dimensions that define the component and how it fits into your assembly.",
+        "Depending on the component, these may include:"
+      ],
+      "bullets": [
+        "Diameter, length, width, and thickness.",
+        "Radius of curvature for curved surfaces.",
+        "Prism angles or window wedge.",
+        "Chamfers, holes, and other mechanical features."
+      ],
+      "after": [
+        "Include the associated tolerances and identify any critical dimensions.",
+        "Avoid applying unnecessarily tight tolerances to every feature. Requirements should reflect the optical design and assembly needs, because tighter tolerances can increase manufacturing and inspection costs.",
+        "For lenses, clarify whether focal length is a reference value or an acceptance requirement."
+      ]
+    },
+    {
+      "heading": "4. Optical Surface and Alignment Requirements",
+      "paragraphs": [
+        "Mechanical dimensions alone do not fully describe a precision optical component. Include the optical requirements relevant to your design, such as:"
+      ],
+      "bullets": [
+        "Surface quality, including scratch-dig requirements.",
+        "Surface figure or surface irregularity.",
+        "Clear aperture.",
+        "Centration for lenses.",
+        "Parallelism or wedge for windows.",
+        "Angular tolerances for prisms."
+      ],
+      "after": [
+        "When specifying surface accuracy in wavelengths, include the reference wavelength. State the applicable standard and inspection method where required.",
+        "Clear aperture and transmittance describe different properties: clear aperture defines the usable optical area, while transmittance describes how much light passes through the component under specified conditions."
+      ]
+    },
+    {
+      "heading": "5. Coating Requirements",
+      "paragraphs": [
+        "Specify whether the component should be uncoated or coated, and identify the surfaces that require treatment.",
+        "For a coating quotation, useful information includes:"
+      ],
+      "bullets": [
+        "Coating type, such as anti-reflection or reflective coating.",
+        "Operating wavelength or wavelength range.",
+        "Required transmittance or reflectance.",
+        "Angle of incidence.",
+        "Polarization conditions, where relevant."
+      ],
+      "after": [
+        "Clarify whether the performance requirement applies to an individual surface or the complete component, and whether it is an average value or a limit across the specified band.",
+        "For laser applications, include laser damage threshold requirements and the associated test conditions if applicable."
+      ]
+    },
+    {
+      "heading": "6. Quantity and Delivery Requirements",
+      "paragraphs": [
+        "State the quantity needed for the current order. If you are comparing different order volumes, request separate prices for each quantity.",
+        "It is also helpful to distinguish between prototype quantities and expected production volumes. This allows the supplier to assess the appropriate manufacturing approach.",
+        "Include your preferred delivery date and any documentation, inspection, or packaging requirements, such as material certificates, coating measurement reports, or individual protective packaging."
+      ]
+    },
+    {
+      "heading": "What If Some Specifications Are Still Missing?",
+      "paragraphs": [
+        "You do not need to wait until every detail is finalized before contacting a supplier.",
+        "Send the available drawing or specifications, explain the component’s function, and identify which requirements remain open. The supplier can then review the available information and clarify what is needed before confirming a quotation.",
+        "An early budgetary estimate may be possible, but it should be distinguished from a firm quotation based on agreed technical requirements."
+      ]
+    },
+    {
+      "heading": "Discuss Your Custom Optics Requirements with Baitec Optics",
+      "paragraphs": [
+        "Baitec Optics supplies custom optical lenses, windows, prisms, mirrors, and other optical components for instrument and equipment applications.",
+        "To discuss your project, send us your drawings, required quantities, and available specifications. Include your material, coating, and delivery requirements where known.",
+        "Contact Baitec Optics to request a quotation for your custom optical components."
+      ]
+    }
+  ]
+},
   {
     "slug": "why-a-photo-is-not-enough-to-quote-custom-optics",
     "title": "Why a Photo Is Not Enough to Quote Custom Optics: What Information We Actually Need",
