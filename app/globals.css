@@ -13,12 +13,12 @@ nav a:hover { color:var(--blue); }
 .mobile-menu-button { display:none; width:44px; height:44px; padding:10px; border:0; border-radius:50%; background:#edf5f6; cursor:pointer; }
 .mobile-menu-button span { display:block; width:22px; height:2px; margin:4px auto; background:var(--navy); }
 .nav-products { position:relative; align-self:stretch; display:flex; align-items:center; }
-.nav-products-heading { display:flex; align-items:center; }
-.nav-products-trigger { display:flex; align-items:center; }
+.nav-products-heading { display:flex; align-items:center; min-height:44px; position:relative; z-index:2; }
+.nav-products-trigger { display:flex; align-items:center; min-height:44px; padding:0 4px; }
 .nav-products-toggle { display:flex; align-items:center; justify-content:center; width:25px; padding:0; border:0; background:transparent; color:#7d8aa1; cursor:pointer; }
 .nav-products-toggle span { margin-top:-3px; font-size:15px; transition:transform .2s ease; }
 .nav-products-menu { position:absolute; top:calc(100% - 1px); left:50%; width:max-content; min-width:0; padding:8px; display:grid; grid-template-columns:1fr; gap:1px; background:#fff; border:1px solid #e2e8ef; box-shadow:0 20px 45px rgba(20,35,75,.15); opacity:0; visibility:hidden; transform:translate(-50%,8px); transition:opacity .18s ease,transform .18s ease,visibility .18s; }
-.nav-products-menu:before { content:""; position:absolute; left:0; right:0; top:-12px; height:12px; }
+.nav-products-menu:before { content:""; position:absolute; left:0; right:0; top:-12px; height:12px; pointer-events:none; }
 .nav-products-menu a { display:flex; align-items:center; justify-content:center; min-height:38px; padding:7px 16px; color:#42516c; font-size:12px; font-weight:700; text-align:center; white-space:nowrap; transition:.18s ease; }
 .nav-products-menu a:hover,.nav-products-menu a:focus-visible { color:var(--navy); background:#edf5f6; }
 .nav-products:hover .nav-products-menu,.nav-products:focus-within .nav-products-menu { opacity:1; visibility:visible; transform:translate(-50%,0); }
