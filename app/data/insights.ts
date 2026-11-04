@@ -17,6 +17,109 @@ export type InsightArticle = {
 // Add approved articles here. Dates represent actual publication and revision dates.
 export const insightArticles: InsightArticle[] = [
 {
+  "slug": "optical-windows-how-to-choose-the-right-material",
+  "title": "Optical Windows: How to Choose the Right Material for Your Application",
+  "description": "Choose optical window materials for your application by reviewing wavelength, material grade, operating environment, optical requirements and coatings.",
+  "seoTitle": "Optical Window Material Selection Guide | Baitec Optics",
+  "seoDescription": "Learn how to choose optical window materials based on wavelength, material grade, operating environment, dimensions, optical requirements and coating specifications.",
+  "category": "Materials",
+  "publishedAt": "2026-11-04",
+  "image": "/insight/optical-window-materials.png",
+  "imageAlt": "Clear, yellow and dark optical windows in round and rectangular shapes on a protective mat beside a caliper",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "An optical window may look like a simple transparent plate, but choosing its material involves more than finding a piece of glass that fits the housing. The window must transmit the required wavelengths, withstand its operating environment, and meet the optical requirements of the system.",
+        "For buyers sourcing custom optical windows, the most useful starting point is the application. What light needs to pass through the window? What conditions will it face? Which specifications are essential to the equipment?",
+        "This guide explains the main questions to consider before selecting a material."
+      ]
+    },
+    {
+      "heading": "1. Start with the Operating Wavelength",
+      "paragraphs": [
+        "A material that appears transparent to the eye may not transmit the wavelengths used by your instrument.",
+        "N-BK7 is a common starting point for visible and some near-infrared applications. Fused silica is often considered when ultraviolet transmission or low thermal expansion is important. Sapphire can be useful where durability is a priority, while materials such as zinc selenide, silicon, and germanium serve different infrared applications.",
+        "These are starting points rather than interchangeable options. “Infrared” covers a broad range, so an infrared window should always be specified against the actual operating band.",
+        "When requesting a quotation, provide a wavelength or defined range rather than simply stating “visible” or “IR.” If several wavelengths must pass through the same window, include all of them."
+      ]
+    },
+    {
+      "heading": "2. Confirm the Exact Material Grade",
+      "paragraphs": [
+        "A general material name may leave important details unresolved.",
+        "For fused silica, for example, the manufacturing process and hydroxyl content can affect spectral transmission. A grade selected for ultraviolet use may have different infrared absorption characteristics from a grade intended for infrared applications.",
+        "If your drawing specifies a manufacturer and material grade, include both in the enquiry. If alternatives are acceptable, identify the properties that must be maintained and state whether substitutions require approval.",
+        "For a replacement window, confirming the original material is especially useful. Matching the dimensions alone does not establish optical equivalence."
+      ]
+    },
+    {
+      "heading": "3. Describe the Operating Environment",
+      "paragraphs": [
+        "The environment helps define what the window must withstand throughout its service life.",
+        "Useful information includes:"
+      ],
+      "bullets": [
+        "Operating temperature and expected temperature changes.",
+        "Indoor, outdoor, or enclosed installation.",
+        "Exposure to moisture, chemicals, dust, or repeated cleaning.",
+        "Any pressure difference across the window.",
+        "Mounting and sealing arrangements."
+      ],
+      "after": [
+        "For a protective window, explain what it protects and how it is installed. A window fitted inside a laboratory instrument faces different conditions from one exposed on an outdoor sensor.",
+        "Where pressure loading is involved, provide the unsupported opening and pressure conditions so the material, thickness, and mounting can be reviewed together."
+      ]
+    },
+    {
+      "heading": "4. Specify Dimensions and Optical Requirements",
+      "paragraphs": [
+        "Material selection is only one part of a complete window specification. The supplier also needs the geometry and acceptance requirements.",
+        "Depending on the application, include:"
+      ],
+      "bullets": [
+        "Diameter or length and width.",
+        "Thickness and dimensional tolerances.",
+        "Clear aperture.",
+        "Surface quality.",
+        "Surface flatness or transmitted wavefront requirements.",
+        "Parallelism or intentional wedge.",
+        "Edge features, such as chamfers."
+      ],
+      "after": [
+        "Flatness and transmitted wavefront error describe different aspects of performance. A window’s effect on the transmitted wavefront also depends on factors beyond the flatness of an individual surface, including material uniformity and mounting stress.",
+        "Identify the requirements that are critical to your system so the quotation reflects the intended use."
+      ]
+    },
+    {
+      "heading": "5. Define the Coating Separately",
+      "paragraphs": [
+        "“AR coated” is a useful description, but it is not a complete coating specification.",
+        "For a custom optical window, state the operating wavelength range, angle of incidence, required transmission or reflection performance, and which surfaces need coating. Include polarization conditions where relevant.",
+        "Also clarify whether the transmission requirement applies to the complete window or whether you are specifying reflectance per coated surface.",
+        "For example, “AR coating on both faces for operation at 1064 nm” gives a clearer starting point than “high-transmission coating.” The performance limit and measurement conditions can then be agreed during technical review."
+      ]
+    },
+    {
+      "heading": "6. Send the Application When the Material Is Undecided",
+      "paragraphs": [
+        "You can begin an enquiry before selecting the final material.",
+        "Send the available drawing, operating wavelength, installation conditions, and required quantity. Explain which specifications are fixed and which remain open.",
+        "A useful enquiry might read:",
+        "“We need a custom protective window for an optical sensor. The operating band is 450–900 nm. Please review the attached dimensions and advise on material and coating options. The initial quantity is 20 pieces.”",
+        "This gives the supplier a practical basis for discussion without treating an initial material suggestion as a finalized design."
+      ]
+    },
+    {
+      "heading": "Discuss Your Custom Optical Windows with Baitec Optics",
+      "paragraphs": [
+        "Baitec Optics supplies custom optical windows manufactured to agreed material, dimensional, surface, and coating requirements.",
+        "Send your drawing, operating wavelength, required quantity, and available specifications to sales@baitecoptics.com. We can review your requirements and clarify the information needed for a quotation."
+      ]
+    }
+  ]
+},
+{
   "slug": "how-to-request-a-quote-for-custom-optical-components",
   "title": "How to Request a Quote for Custom Optical Components: A Practical Checklist",
   "description": "A practical RFQ checklist covering drawings, optical materials, dimensions, tolerances, surface requirements, coatings, quantities and delivery.",
