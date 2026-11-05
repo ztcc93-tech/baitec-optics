@@ -804,3 +804,7 @@ h1 em { font-style:normal; color:#2c91a9; }
 .insight-prose p,.insight-prose ul,.insight-prose ol{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.62;color:var(--muted);text-align:justify;text-justify:inter-word;hyphens:auto}
 .insight-prose p{margin-bottom:14px}.insight-prose section{margin-bottom:26px}.insight-prose h2{margin-bottom:12px}.insight-prose ul,.insight-prose ol{margin-bottom:16px}.insight-prose li{margin-bottom:8px}
 @media(max-width:600px){.insight-prose p,.insight-prose ul,.insight-prose ol{font-size:15px;line-height:1.62}}
+
+/* Compact product enquiry action. */
+.product-rfq-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;max-width:100%;padding:10px 22px;margin-top:12px;border-radius:4px;background:var(--accent);color:#fff;font-size:14px;font-weight:700;line-height:1.4;text-align:center;transition:background .2s ease}
+.product-rfq-button:hover{background:#22798f;color:#fff}.product-rfq-button:focus-visible{outline:2px solid #111827;outline-offset:3px}

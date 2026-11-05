@@ -31,8 +31,8 @@ const pageMetadata: Record<string, Metadata> = {
     "description": "Discuss custom infrared optical components for your application. Send material, wavelength range, dimensions and coating requirements for manufacturing review."
   },
   "/products/oem-optical-solutions": {
-    "title": "Custom Optics & OEM Optical Solutions | Baitec Optics",
-    "description": "Custom optics and OEM components, including homogenizers, prisms, cones and encoder discs. Send your drawings and specifications for review and a quote."
+    "title": "Custom Optical Components Manufacturer | Baitec Optics",
+    "description": "Custom precision optical components including lenses, prisms, windows, mirrors and domes. OEM manufacturing to customer drawings and specifications."
   },
   "/products/optical-lenses/plano-convex-lenses": {
     "title": "Custom Plano-Convex Lenses Manufacturer | Baitec Optics",
@@ -223,8 +223,8 @@ const pageMetadata: Record<string, Metadata> = {
     "description": "Custom optical Encoder Disc for optical position and rotation sensing. Specify disc dimensions, pattern and material. Request a quote."
   },
   "/products/oem-optical-solutions/quartz-glass-tube": {
-    "title": "Custom Quartz Glass Tube Manufacturer | Baitec Optics",
-    "description": "Custom quartz Glass Tube for optical and laboratory assemblies requiring tubular quartz components. Specify diameters, length and material requirements. Request a quote."
+    "title": "Custom Fused Silica Glass Tube Manufacturer | Baitec Optics",
+    "description": "Custom Fused Silica Glass Tube for optical and laboratory assemblies requiring tubular Fused Silica components. Specify diameters, length and material requirements. Request a quote."
   },
   "/": {
     "title": "Baitec Optics | Custom Precision Optical Components",

@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "What materials and coatings are available?",
-    answer: "Options include optical glass, quartz, sapphire, and infrared materials. Coatings can be specified for your wavelength range and application.",
+    answer: "Options include optical glass, Fused Silica, sapphire, and infrared materials. Coatings can be specified for your wavelength range and application.",
   },
   {
     question: "Do you accept prototypes and small-batch orders?",

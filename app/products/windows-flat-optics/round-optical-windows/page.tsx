@@ -27,7 +27,7 @@ const applications = [
 
 const specificationGrades = [
   { title: "Standard Grade", items: [
-    ["Materials", "N-BK7, Quartz, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
+    ["Materials", "N-BK7, Fused Silica, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
     ["Dimensions", "Ø3–300 mm or side length 3–300 mm"],
     ["Diameter Tolerance", "+0 / −0.10 mm"],
     ["Length and Width Tolerance", "±0.10 mm"],
@@ -40,7 +40,7 @@ const specificationGrades = [
     ["Coating", "AR / HR, etc., to customer requirements"],
   ]},
   { title: "Precision Grade", items: [
-    ["Materials", "N-BK7, Quartz, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
+    ["Materials", "N-BK7, Fused Silica, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
     ["Dimensions", "Ø3–300 mm or side length 3–300 mm"],
     ["Diameter Tolerance", "+0 / −0.02 mm"],
     ["Length and Width Tolerance", "±0.02 mm"],

@@ -1,3 +1,4 @@
+import ProductRfqButton from "./ProductRfqButton";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 import ProductImageGallery from "./ProductImageGallery";
@@ -29,6 +30,7 @@ export default function PrismDetailPage({ title, description, image, categoryNam
     <h2>Typical Specifications</h2>
     {specificationGrades?.length === 2 ? <div className="specifications-table-wrap"><table className="specifications-table grade-comparison-table"><thead><tr><th>Parameter</th><th>{specificationGrades[0].title}</th><th>{specificationGrades[1].title}</th></tr></thead><tbody>{specificationGrades[0].items.map(([label, standardValue], index) => <tr key={label}><th scope="row">{label}</th><td>{standardValue}</td><td>{specificationGrades[1].items[index][1]}</td></tr>)}</tbody></table></div> : <table className="specifications-table"><tbody>{specifications.map(([label, value]) => <tr key={label}><th scope="row">{label}</th><td>{value}</td></tr>)}</tbody></table>}
     {showSpecificationsNote ? <p className="specifications-note"><em>{specificationsNote ?? "Other specifications, materials, and coatings are available upon request."}</em></p> : null}
+    <ProductRfqButton />
   </>;
   const hasProductCopy = Boolean(overview?.length || applications?.length);
   const hasSpecifications = Boolean(specificationGrades?.length || specifications.length);
@@ -47,8 +49,8 @@ export default function PrismDetailPage({ title, description, image, categoryNam
               {applications?.length ? <section className="product-copy-section product-applications"><h2>Applications</h2><ul>{applications.map(({ title: applicationTitle, description: applicationDescription }) => <li key={applicationTitle}><strong>{applicationTitle}:</strong> {applicationDescription}</li>)}</ul></section> : null}
             </div>
           </div>
-          {hasSpecifications ? <div className="compact-specifications full-width-specifications">{specificationsContent}</div> : null}
-        </> : hasSpecifications ? <div className="compact-product-grid">{productImage}<div className="compact-specifications">{specificationsContent}</div></div> : <div className="image-only-product-detail">{productImage}</div>}
+          {hasSpecifications ? <div className="compact-specifications full-width-specifications">{specificationsContent}</div> : <ProductRfqButton />}
+        </> : hasSpecifications ? <div className="compact-product-grid">{productImage}<div className="compact-specifications">{specificationsContent}</div></div> : <div className="image-only-product-detail">{productImage}<ProductRfqButton /></div>}
       </section>
       <SiteFooter />
     </main>

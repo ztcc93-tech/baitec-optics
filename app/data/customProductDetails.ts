@@ -41,7 +41,7 @@ export const customProductDetails: readonly CustomProductDetail[] = [
   { slug: "custom-corner-cube-prism", title: "Custom Corner Cube", imageCount: 5 },
   { slug: "custom-spherical-lens", title: "Spherical Lens", imageCount: 5 },
   { slug: "optical-encoder-disc", title: "Optical Encoder Disc", imageCount: 6 },
-  { slug: "quartz-glass-tube", title: "Quartz Tube", imageCount: 7 },
+  { slug: "quartz-glass-tube", title: "Fused Silica Tube", imageCount: 7 },
 ] as const;
 
 export function getCustomProductDetail(slug: string) {

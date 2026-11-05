@@ -103,18 +103,18 @@ export const customProductCopy: Record<string, {overview: string[]; applications
   },
   "quartz-glass-tube": {
     "overview": [
-      "A quartz glass tube has an annular cross-section defined by its inner diameter, outer diameter and length.",
+      "A Fused Silica glass tube has an annular cross-section defined by its inner diameter, outer diameter and length.",
       "It provides a tubular interface or enclosure whose transmission and environmental suitability depend on the material grade and finish.",
-      "Specify quartz grade, dimensions, end-face finish, surface requirements and operating conditions for review."
+      "Specify Fused Silica grade, dimensions, end-face finish, surface requirements and operating conditions for review."
     ],
     "applications": [
       {
         "title": "Laboratory Assemblies",
-        "description": "Tubular quartz components integrated into scientific instruments according to the supplied drawing."
+        "description": "Tubular Fused Silica components integrated into scientific instruments according to the supplied drawing."
       },
       {
         "title": "Optical Enclosures",
-        "description": "Quartz interfaces selected for the required wavelength and operating environment."
+        "description": "Fused Silica interfaces selected for the required wavelength and operating environment."
       }
     ]
   }

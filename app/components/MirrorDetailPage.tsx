@@ -1,3 +1,4 @@
+import ProductRfqButton from "./ProductRfqButton";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 
@@ -15,6 +16,7 @@ export default function MirrorDetailPage({ title, description, image, specificat
           <h2>Typical Specifications</h2>
           <table className="specifications-table"><tbody>{specifications.map(([label,value]) => <tr key={label}><th scope="row">{label}</th><td>{value}</td></tr>)}</tbody></table>
           <p className="specifications-note"><em>Other specifications, materials, and coatings are available upon request.</em></p>
+          <ProductRfqButton />
         </div>
       </div>
     </section>

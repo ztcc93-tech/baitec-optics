@@ -198,12 +198,12 @@ export const prismProductDetails: readonly PrismProductDetail[] = rawProducts.ma
 
 export const prismSpecificationGrades = [
   { title: "Standard Grade", items: [
-    ["Materials", "N-BK7, Quartz, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
+    ["Materials", "N-BK7, Fused Silica, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
     ["Dimensions", "5–250 mm"], ["Angle Tolerance", "±3′"], ["Surface Flatness", "λ/4 @ 632.8 nm"],
     ["Surface Quality\n(Scratch–Dig)", "40–20"], ["Coating", "AR / HR, etc., to customer requirements"],
   ]},
   { title: "Precision Grade", items: [
-    ["Materials", "N-BK7, Quartz, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
+    ["Materials", "N-BK7, Fused Silica, CaF₂, MgF₂, ZnSe, ZnS,\nand other optical glass upon request"],
     ["Dimensions", "5–250 mm"], ["Angle Tolerance", "±1″–±30″"], ["Surface Flatness", "λ/10 @ 632.8 nm"],
     ["Surface Quality\n(Scratch–Dig)", "20–10"], ["Coating", "AR / HR, etc., to customer requirements"],
   ]},
