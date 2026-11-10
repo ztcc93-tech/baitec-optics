@@ -17,6 +17,103 @@ export type InsightArticle = {
 // Add approved articles here. Dates represent actual publication and revision dates.
 export const insightArticles: InsightArticle[] = [
 {
+  "slug": "surface-quality-vs-surface-accuracy-optical-specifications",
+  "title": "Surface Quality vs. Surface Accuracy: Understanding Optical Specifications",
+  "description": "Understand scratch-dig surface quality, surface accuracy and roughness, and learn which details to include when specifying custom optical components.",
+  "seoTitle": "Surface Quality vs. Surface Accuracy | Baitec Optics",
+  "seoDescription": "Understand the difference between optical surface quality, surface accuracy and roughness, with practical guidance on scratch-dig, wavelength, PV and RMS requirements.",
+  "category": "Manufacturing",
+  "publishedAt": "2026-11-10",
+  "image": "/insight/surface-quality-vs-surface-accuracy.png",
+  "imageAlt": "Optical window on protective foam beside a drawing showing surface quality and surface figure specifications",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "When requesting custom optical lenses, windows, or mirrors, buyers often encounter specifications such as 40-20 scratch-dig and λ/4 surface accuracy.",
+        "Both describe an optical surface, but they answer different questions. Surface quality concerns defects such as scratches and digs. Surface accuracy concerns how closely the manufactured surface follows its intended shape.",
+        "Understanding the distinction helps buyers interpret drawings, compare quotations, and communicate requirements more clearly."
+      ]
+    },
+    {
+      "heading": "1. What Does Surface Quality Describe?",
+      "paragraphs": [
+        "Surface quality specifies allowable surface defects. A familiar format is the scratch-dig designation, such as 40-20 or 20-10.",
+        "Under the MIL-PRF-13830B convention, the scratch designation is assessed by comparison with reference standards under controlled viewing conditions. It should not be read as a direct measurement of scratch width. The dig designation relates to the size of pits or digs.",
+        "Within the same specification system, lower numbers generally represent tighter defect limits. However, acceptance also depends on the applicable rules and inspection conditions, so the standard should accompany the numerical requirement.",
+        "For an enquiry, “surface quality: 40-20 scratch-dig, per the specified drawing standard” is more useful than a general request for a “high-quality polished surface.”"
+      ]
+    },
+    {
+      "heading": "2. What Does Surface Accuracy Describe?",
+      "paragraphs": [
+        "Surface accuracy concerns the departure from the intended surface form.",
+        "For a flat window or mirror, this may be expressed as surface flatness. For a curved optical surface, the drawing may distinguish curvature or power error from surface irregularity.",
+        "Requirements are often expressed in fractions of a reference wavelength, such as λ/4 or λ/10. These values need context: the reference wavelength, evaluation area, and definition of the reported error must be clear.",
+        "When comparing quotations, check that both suppliers are quoting the same requirement. A shorter numerical specification can conceal different interpretations if the measurement basis is omitted."
+      ]
+    },
+    {
+      "heading": "3. Why Do These Specifications Need Separate Lines?",
+      "paragraphs": [
+        "Consider two enquiries:"
+      ],
+      "bullets": [
+        "A custom lens with a 40-20 scratch-dig requirement.",
+        "A custom lens with a λ/4 surface figure requirement."
+      ],
+      "after": [
+        "The first defines a surface-defect requirement but leaves the figure requirement open. The second defines a form requirement but leaves the allowable scratches and digs open.",
+        "A complete drawing may need both. Neither value, by itself, provides a complete description of the surface.",
+        "The practical question is therefore: “Which defect limits and form tolerances does this application require?” Listing them separately makes the answer easier to quote and inspect."
+      ]
+    },
+    {
+      "heading": "4. Surface Roughness Is Another Requirement",
+      "paragraphs": [
+        "Surface roughness describes fine-scale surface texture. It is commonly reported using a defined roughness metric and measurement bandwidth.",
+        "It is distinct from scratch-dig quality and overall surface figure. Where scatter control is important, a drawing may need a separate roughness requirement with an agreed measurement method.",
+        "If your design specifies surface roughness, include it explicitly rather than assuming that a scratch-dig requirement also defines the surface texture."
+      ]
+    },
+    {
+      "heading": "5. Write Requirements That Can Be Verified",
+      "paragraphs": [
+        "A useful specification tells the manufacturer both what must be achieved and how acceptance will be determined.",
+        "For surface-related requirements, clarify:"
+      ],
+      "bullets": [
+        "Which optical surfaces the requirement applies to.",
+        "The clear aperture or evaluation area.",
+        "The applicable drawing or inspection standard.",
+        "The reference wavelength for wave-based values.",
+        "Whether the value describes surface error or wavefront error.",
+        "Whether PV or RMS is required, and any permitted terms removed during analysis.",
+        "Whether inspection applies before or after coating, where relevant."
+      ],
+      "after": [
+        "For example, a drawing might separately identify “Surface quality: 40-20 scratch-dig” and “Surface figure: ≤λ/4 PV at 632.8 nm,” together with the applicable standard, evaluation aperture, and analysis conditions.",
+        "This is an illustration of specification structure. The actual limits should come from the optical design and agreed acceptance criteria."
+      ]
+    },
+    {
+      "heading": "6. Match the Requirements to the Project",
+      "paragraphs": [
+        "When preparing an enquiry, identify which tolerances are fixed by the design and which can be discussed.",
+        "If the drawing is final, provide the current revision so the quotation can follow it. If the project is still being developed, explain the intended function and ask the supplier to identify requirements that need clarification.",
+        "When reviewing a quotation, confirm that the quoted surface quality, figure, aperture, coating stage, and inspection documentation match your request. This creates a clearer basis for comparing offers and accepting the finished components."
+      ]
+    },
+    {
+      "heading": "Discuss Your Optical Specifications with Baitec Optics",
+      "paragraphs": [
+        "Baitec Optics supplies custom optical lenses, windows, prisms, and mirrors manufactured to agreed specifications.",
+        "Send your drawing, required quantity, and surface requirements to sales@baitecoptics.com. If any specification remains open, identify it in your enquiry so we can review it with you before confirming the quotation."
+      ]
+    }
+  ]
+},
+{
   "slug": "optical-windows-how-to-choose-the-right-material",
   "title": "Optical Windows: How to Choose the Right Material for Your Application",
   "description": "Choose optical window materials for your application by reviewing wavelength, material grade, operating environment, optical requirements and coatings.",
