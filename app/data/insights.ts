@@ -17,6 +17,79 @@ export type InsightArticle = {
 // Add approved articles here. Dates represent actual publication and revision dates.
 export const insightArticles: InsightArticle[] = [
 {
+  "slug": "custom-optical-components-cost-guide",
+  "title": "What Affects the Cost of Custom Optical Components",
+  "description": "Understand how material, geometry, tolerances, coating, inspection and order quantity affect custom optics quotations.",
+  "category": "Manufacturing",
+  "publishedAt": "2026-11-14",
+  "image": "/insight/custom-optics-cost-guide.png",
+  "imageAlt": "Four precision optical components on black velvet",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "When two optical components look similar, a large difference in price can be difficult to understand. A lens or window may have the same nominal dimensions as another part while requiring a different material grade, polishing process, coating, or inspection procedure.",
+        "For custom optics, the quotation reflects the complete specification and order conditions. Understanding the main cost drivers helps buyers compare offers and discuss practical options without compromising the performance their system needs."
+      ]
+    },
+    {
+      "heading": "1 Material and Grade",
+      "paragraphs": [
+        "The material specification determines more than the price of the starting blank. Availability, usable blank size, material quality, and the way the substrate responds to fabrication can all affect the finished cost.",
+        "Even within one material family, grades may differ in transmission, homogeneity, inclusions, or other properties. A quotation based on a general material name may therefore differ from one based on an exact manufacturer and grade.",
+        "If your design permits an alternative, identify the properties that must be maintained. Any substitution should be reviewed and approved before manufacture."
+      ]
+    },
+    {
+      "heading": "2 Dimensions and Geometry",
+      "paragraphs": [
+        "Diameter, thickness, curvature, and edge features influence how a component can be held, ground, polished, and measured. A large, thin window may need different handling and support from a thicker part of the same diameter.",
+        "Curved surfaces, restricted access, or unusual shapes can require dedicated fixtures and additional process development. A small component can also be demanding when there is little space for handling or inspection.",
+        "Provide the complete geometry and tolerances. A photograph can illustrate the shape, but it does not define the requirements needed for a firm manufacturing quotation."
+      ]
+    },
+    {
+      "heading": "3 Optical and Mechanical Tolerances",
+      "paragraphs": [
+        "Tighter tolerances can increase processing time, inspection effort, and the risk of rejection. Their effect depends on the combination of requirements: a tolerance that is routine on one geometry may be difficult on another.",
+        "Surface quality, surface figure, and roughness describe different characteristics. Tightening one does not automatically improve all aspects of optical performance. Likewise, a window’s surface flatness alone does not fully define its transmitted wavefront performance.",
+        "Mark requirements that are fixed by the design and identify any that remain open for discussion. Changes should follow an engineering review of the application rather than an assumption that looser specifications are always acceptable."
+      ]
+    },
+    {
+      "heading": "4 Coating and Acceptance Requirements",
+      "paragraphs": [
+        "A coating must be defined by its intended performance. Wavelength range, angle of incidence, polarization, coated surfaces, and environmental requirements help determine the design and verification needed.",
+        "A request for a broad operating band or a demanding performance limit can lead to a different quotation from a simpler coating requirement. The effect on cost should be reviewed for the actual substrate and part geometry.",
+        "Inspection documentation also belongs in the enquiry. A certificate of conformity, dimensional report, spectral measurement, and interferometric report represent different deliverables. State what evidence is required and whether testing applies to every part or to an agreed sample."
+      ]
+    },
+    {
+      "heading": "5 Order Quantity and Manufacturing Preparation",
+      "paragraphs": [
+        "A small order can still require drawing review, tooling, machine setup, coating preparation, and inspection planning. These activities are spread over fewer accepted parts, which can make the unit price of a prototype higher than that of a repeat production batch.",
+        "Increasing quantity may improve the unit price, but the reduction is not necessarily proportional. Material purchasing, fixture capacity, coating loads, and yield can affect the price at each quantity.",
+        "If you expect repeat orders, provide the initial quantity and realistic future demand separately. Ask whether the offer includes one-time charges and whether existing tooling can be reused if the drawing remains unchanged."
+      ]
+    },
+    {
+      "heading": "6 Compare Quotations on the Same Basis",
+      "paragraphs": [
+        "Before comparing totals, confirm that suppliers have used the same drawing revision, material, tolerances, coating requirements, and acceptance criteria. Check the required quantity, delivery basis, packaging, inspection documents, and any exclusions.",
+        "A lower price may reflect a different technical interpretation or commercial scope. Ask for clarification where an offer does not explicitly address a critical requirement.",
+        "If the price exceeds your budget, request a review of the main cost drivers. A supplier may be able to quote an approved material alternative, a different quantity, or a revised specification for your evaluation. Performance-critical requirements should remain subject to your design approval."
+      ]
+    },
+    {
+      "heading": "Discuss Your Custom Optics with Baitec Optics",
+      "paragraphs": [
+        "Baitec Optics supplies custom optical lenses, windows, prisms, and mirrors manufactured to agreed specifications.",
+        "Send your drawing, required quantity, material, coating, and inspection requirements to sales@baitecoptics.com. If you are evaluating cost options, identify which specifications are fixed and which can be reviewed so we can clarify the basis of the quotation."
+      ]
+    }
+  ]
+},
+{
   "slug": "surface-quality-vs-surface-accuracy-optical-specifications",
   "title": "Surface Quality vs. Surface Accuracy: Understanding Optical Specifications",
   "description": "Understand scratch-dig surface quality, surface accuracy and roughness, and learn which details to include when specifying custom optical components.",
